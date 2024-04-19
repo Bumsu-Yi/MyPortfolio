@@ -26,25 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var currentPath = document.location.pathname
     var filenameWithExtension = currentPath.split('/').pop();
     var filename = filenameWithExtension.replace('.html', ''); // Remove .html extension
-    var currentLink;
-    if(filename != "menu"){
-        console.log(filename)
-        sessionStorage.setItem('key', filename);
-    }
-    else{
-        var value = sessionStorage.getItem('key');
-        console.log(value); 
-        var currentLink= document.getElementById(value);
-        if(currentLink){
-            currentLink.classList.add("active");
-        }
-        else{
-            currentLink = document.getElementById("index");
-            currentLink.classList.add("active");
-        }
-        
-    }
+    var currentLink= document.getElementById(filename);
+    currentLink.classList.add("active");      
 });
+
 
 function toggleMenu() {
     var menu = document.getElementById("menu");
@@ -54,6 +39,5 @@ function toggleMenu() {
       menu.style.display = "none";
     }
   }
-
 
 
