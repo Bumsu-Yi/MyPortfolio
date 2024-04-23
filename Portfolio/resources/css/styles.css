@@ -55,7 +55,6 @@ footer {
 #intro-text {
     font-size: 4.9rem; /* Set font size */
     font-weight: 600; /* Set font weight to semibold */
-    margin-top: 26.1rem; /* Set top margin */
     text-align: center; /* Center-align the text */
     margin-right: auto;
     margin-left: auto;
@@ -282,6 +281,24 @@ footer {
   button[type="submit"]:hover {
     background-color: #258e98; /* Darken background color on hover */
   }
+
+
+  ul.b {
+    margin-left:2rem;
+    list-style-type: square;
+}
+
+ul.b li{
+    margin-bottom:1rem;
+}
+
+.dot {
+    width: 1rem;
+    height: 1rem;
+    background-color: #34c1c4;
+    border-radius: 50%; /* To make it a circle */
+    margin-right: 1rem; /* Adjust spacing between the dot and text */
+}
 
 @media only screen and (max-width: 620px) {
     /* For mobile phones: */
