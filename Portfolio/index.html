@@ -6,48 +6,49 @@
     <title>Sam's portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Prefetch Google Fonts CSS -->
+    <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap">
+    <!-- Actual Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/styles.css?v=2.0"> 
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
-    <style>     
-        
-    </style>
 </head>
 
 <body>
     <div class="menu" id="menu">
-        <div style="width:80%;margin-left:auto;margin-right:auto">
+        <div class="menu-container">
             <header>
-                <span style="color:white;">SAM</span> 
-                <button onclick="toggleMenu()" style="border:none; background-color:black;"><svg xmlns="http://www.w3.org/2000/svg" width="2.6rem" height="2.6rem" viewBox="0 0 2048 2048"><path fill="white" d="m1115 1024l690 691l-90 90l-691-690l-691 690l-90-90l690-691l-690-691l90-90l691 690l691-690l90 90z"/></svg>
+                <a href="index.html">SAM</a> 
+                <button onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="2.6rem" height="2.6rem" viewBox="0 0 2048 2048"><path fill="white" d="m1115 1024l690 691l-90 90l-691-690l-691 690l-90-90l690-691l-690-691l90-90l691 690l691-690l90 90z"/></svg>
                 </button>  
             </header>
-            <div style="margin-top:15.5rem; margin-bottom:18.9rem;">
-                <div style="text-align:center;">
-                    <a href="index.html" id="index" style="text-decoration: none;">
-                        <span style="font-size:3.9rem; font-weight:500; color:white;">Project</span>
+            <div class="menu-items">
+                <div>
+                    <a href="index.html" id="index">
+                        <span>Project</span>
                     </a>
                 </div>
-                <div style="text-align:center; margin-top:10rem;">
-                    <a href="about.html" id="about" style="text-decoration: none;">
-                        <span style="font-size:3.9rem; font-weight:500; color:white;">About</span>
+                <div>
+                    <a href="about.html" id="about">
+                        <span>About</span>
                     </a> 
                 </div>
-                <div style="text-align:center; margin-top:10rem; ">
-                    <a href="contact.html" id="contact" style="text-decoration: none;">
-                    <span style="font-size:3.9rem; font-weight:500; color:white;">Contact</span>
+                <div>
+                    <a href="contact.html" id="contact">
+                        <span>Contact</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
     <header>
-        <span style="color:black;">SAM</span> 
-        <button onclick="toggleMenu()" style="border:none; background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="3.6rem" height="3.6rem" viewBox="0 0 24 24"><path fill="black" d="M4 17.27v-1h16v1zm0-4.77v-1h16v1zm0-4.77v-1h16v1z"/></svg></button>
+        <a href="index.html">SAM</a> 
+        <button onclick="toggleMenu()" style="background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="3.6rem" height="3.6rem" viewBox="0 0 24 24"><path fill="black" d="M4 17.27v-1h16v1zm0-4.77v-1h16v1zm0-4.77v-1h16v1z"/></svg></button>
     </header>
    
-    <div style="height:40rem;">
+    <div style="height:20rem;">
         <img src="resources/images/myphoto.png" style="width: 100%; height: 100%; object-fit: contain; caret-color: transparent; ">
     </div>
 
@@ -83,9 +84,7 @@
                     <li>Kotlin</li>
                     <li>C</li>
                     <li>C++</li>
-                    <li>HTML</li>
-                    
-                   
+                    <li>HTML</li> 
                 </ul>
                 <ul class="skill-list">
                     <h3>Backend</h3>
@@ -119,8 +118,7 @@
                 <li>gitlab</li>
                 <li>Jenkins</li>
                 <li>Docker</li>
-            </ul>
-           
+            </ul>      
         </div>
     </div>
 
@@ -133,8 +131,8 @@
   
     <div class="skinroutine-container">
         <div>
-                <h2>Skinroutine</h2>
-                <div class="duration">2023.04 - 2024.03</div>
+            <h2>Skinroutine</h2>
+            <div class="duration">2023.04 - 2024.03</div>
         </div>
         <div>
             <p style="font-size:1.7rem">
@@ -148,7 +146,7 @@
                 <li>Wrote the business plan and technical discription for Skinroutine.</li>
                 <li>Hired talents for development.</li>
                 <li>Created the initial MVP (Minimum Viable Product) sitemap for SkinRoutine.</li>
-              </ul>
+            </ul>
         </div>
 
         <h4 style="margin-top:7.5rem">Development</h4>
@@ -183,7 +181,7 @@
 
         <div style="margin-top:7.5rem; display:flex;" >
             <div style="width:100%;">
-                Reference material example: Our data analyst team developed a model for before and after simulation (e.g., Botox before and after). I assisted in the data selection and labeling tasks.
+                Reference material example:Our data analyst team developed a model for before and after simulation (e.g., Botox before and after). I assisted in the data selection and labeling tasks.
             </div>
             <div style="width:100%; caret-color: transparent;">
                 <img src="resources/images/face.png">
@@ -215,9 +213,9 @@
 
             <ul class="b">
                 <li>Ranked third in lifestyle category in the app store</li>
-                <li>Funded by  Korea Institute of Start-up</li>
-                <li>Media coverage  in various press outlets</li>
-                <li>Steady revenue generation by app sales</li>
+                <li>Funded by Korea Institute of Start-up</li>
+                <li>Media coverage in various press outlets</li>
+                <li>Steady revenue generationby app sales</li>
               </ul>
         </div>
     </div>

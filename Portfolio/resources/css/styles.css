@@ -18,6 +18,7 @@ img {
     height: auto;
 }
 
+/* header */
 header {
     margin-top: 4.1rem; /* Set top margin */
     display: flex; /* Using flexbox to layout header content */
@@ -28,16 +29,23 @@ header span {
     font-family: 'Museomoderno'; /* Apply MuseoModerno font */
     font-size: 3.2rem;
     font-weight: bold; /* Make the font bold */
+    color:black;
 }
 header a {
-
-    width: 5rem; /* Set desired width */
-    height: 5rem; /* Set desired height */
+    text-decoration: none;
+    font-family: 'Museomoderno'; /* Apply MuseoModerno font */
+    font-size: 3.2rem;
+    font-weight: bold; /* Make the font bold */
+    color:black;
     
 }
 header a img{
     width:50%;
     height:50%;
+}
+
+header button {
+    border:none; background-color:black;
 }
 
 
@@ -70,6 +78,38 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+.menu-container {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.menu-items {
+    margin-top:15.5rem; 
+    margin-bottom:18.9rem;
+}
+
+.menu-items > div {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.menu span {
+    font-size:3.9rem; font-weight:500; color:white;
+}
+
+.menu header a {
+    font-family: 'Museomoderno'; /* Apply MuseoModerno font */
+    font-size: 3.2rem;
+    font-weight: bold; /* Make the font bold */
+    color:white;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
 
 .container3 {
     display:flex;
@@ -246,10 +286,6 @@ footer {
   }
 
   
-
-  
-
-  
   /* Input styles */
   .form-group input,
   .form-group textarea 
@@ -257,7 +293,7 @@ footer {
     width: 100%; /* Make inputs take up full width */
     padding: 1rem; /* Add some padding for better appearance */
     border: 0.1rem solid #ccc; /* Add a border */
-    border-radius: 5px; /* Add border radius */
+    border-radius: 0.5rem; /* Add border radius */
     box-sizing:border-box;
   }
   
@@ -328,5 +364,14 @@ ul.b li{
     }
     .container3{
         flex-direction:column;
+    }
+
+    #intro-text {
+        font-size: 3rem; /* Set font size */
+        font-weight: 600; /* Set font weight to semibold */
+        text-align: center; /* Center-align the text */
+        margin-right: auto;
+        margin-left: auto;
+        width:80%;
     }
   }
