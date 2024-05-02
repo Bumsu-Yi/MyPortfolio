@@ -1,8 +1,8 @@
 /* styles.css */
+
 body {
     width:80%;
-    margin-left:auto;
-    margin-right:auto;
+    margin : auto;  
     position: relative; /* Set body position to relative */
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -67,6 +67,11 @@ footer {
     margin-right: auto;
     margin-left: auto;
     width:80%;
+}
+
+#intro-text span {
+    text-decoration: underline; /* Add underline */
+    color: #34C1CA; /* Set text color for HF and SCOPE */
 }
 
 .menu {
@@ -148,20 +153,19 @@ footer {
     color: #34c1ca !important; /* Change color to your desired color */
 }
 
-#hf-scope {
-    text-decoration: underline; /* Add underline */
-    color: #34C1CA; /* Set text color for HF and SCOPE */
-}
-
 .container {
     margin-top:4rem;
 }
 
 #activities-container {
-    margin-bottom: 8.9rem;
     margin-top: 30rem;
     margin-right:auto;
     margin-left:auto;
+}
+
+#activities-container > div {
+    margin-top:3rem;
+    display:flex;
 }
 
 #activities-container h2 {
@@ -170,40 +174,69 @@ footer {
 }
 
 
-.skinroutine-container {
+.outer-container {
+    display:flex;
     margin-top:20rem;
     font-size:1.6rem;
-    margin-bottom:20rem;
 }
 
-.skinroutine-container h2 {
+.outer-container p {
+    font-size:1.6rem;
+    font-weight:regular;
+    color : #4B4B4B;
+}
+
+.outer-container h2 {
+    
+    margin-top:0;
     font-size:4rem;
     font-weight:600;
 }
 
-.skinroutine-container h3 {
+.outer-container h3 {
     font-size:2.5rem;
     font-weight:500;
 
 }
-.skinroutine-container h4 {
+.outer-container h4 {
     font-size:1.9rem;
     font-weight:500;
 
 }
 
-.skinroutine-container h5 {
-    font-size:1.5rem;
-    font-weight:400;
-
+.heading3 {
+    font-size:1.6rem; 
+    font-weight:600
 }
+
+.role{
+    margin-left:18rem; 
+    font-size:2.6rem; 
+    font-weight:600;
+}
+  
+
+.inner-container1 {
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    
+}
+
+
+.spacer {
+    width: 5%; /* Adjust the width as needed */
+    height: 0; /* Ensures the spacer doesn't take up any vertical space */
+}
+
+.inner-container2 {
+    display:flex;
+    flex-direction: column;
+    width:40%;
+}
+
 
 .skinroutine-div {
-    display:flex;
-}
-
-.activity-container {
-    margin-top:3rem;
     display:flex;
 }
 
@@ -214,9 +247,10 @@ footer {
 }
 
 .duration {
+    
     font-size: 2rem;
-    width:40%;
     font-weight: medium;
+    color: #8B8B8B;
 }
 
 .activity-content {
@@ -236,7 +270,12 @@ footer {
     font-weight: bold;
 }
 
+#skills{
+    margin-top:8.9rem;
+}
+
 .skills-container {
+    
     display:flex;
     width:100%;
     flex-direction:row;
@@ -279,6 +318,8 @@ footer {
 
   ul.a {
     list-style-type: circle;
+    font-weight:300; 
+    color:#4B4B4B;
     
   }
   ul.a li {
@@ -322,6 +363,8 @@ footer {
   ul.b {
     margin-left:2rem;
     list-style-type: square;
+    font-weight:300; 
+    color:#4B4B4B;
 }
 
 ul.b li{
@@ -329,11 +372,21 @@ ul.b li{
 }
 
 .dot {
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     background-color: #34c1c4;
     border-radius: 50%; /* To make it a circle */
     margin-right: 1rem; /* Adjust spacing between the dot and text */
+}
+
+.circle {
+    width: 0.5rem; /* Adjust size as needed */
+    height: 0.5rem; /* Adjust size as needed */
+    background-color: #34C1CA;
+    border-radius: 50%; /* Makes it a circle */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Adjust as needed */
 }
 
 @media only screen and (max-width: 620px) {
@@ -345,9 +398,9 @@ ul.b li{
         /* Your mobile-specific CSS rules here */
         flex-direction: column; /* Example: Change flex direction to column */
     }
-    .duration {
-        width:100%;
-    }
+
+   
+    
     .activity-content{
         width:100%;
     }
@@ -359,6 +412,18 @@ ul.b li{
         flex-direction:column;
         width:100%;
     }
+    .outer-container{
+        flex-direction:column;   
+    }
+    .inner-container1{
+        width:100%;
+    }
+    .inner-container2{
+        width:100%;
+    }
+    .outer-container h3{
+        margin-left:0;
+    }
     .skill-list{
         width:100%;
     }
@@ -366,6 +431,10 @@ ul.b li{
         flex-direction:column;
     }
 
+    .role{
+        margin-bottom:2rem;
+        margin-left:0;
+    }
     #intro-text {
         font-size: 3rem; /* Set font size */
         font-weight: 600; /* Set font weight to semibold */

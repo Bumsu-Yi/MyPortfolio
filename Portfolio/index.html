@@ -16,7 +16,7 @@
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 </head>
 
-<body>
+<body style="width:80%; margin: auto;overflow-x: hidden;position: relative;">
     <div class="menu" id="menu">
         <div class="menu-container">
             <header>
@@ -48,31 +48,35 @@
         <button onclick="toggleMenu()" style="background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="3.6rem" height="3.6rem" viewBox="0 0 24 24"><path fill="black" d="M4 17.27v-1h16v1zm0-4.77v-1h16v1zm0-4.77v-1h16v1z"/></svg></button>
     </header>
    
-    <div style="height:20rem;">
+    <div style="height:23rem;">
         <img src="resources/images/myphoto.png" style="width: 100%; height: 100%; object-fit: contain; caret-color: transparent; ">
     </div>
 
-    <div id="intro-text"><p>Hey! I’m Sam and I’m a full stack developer. Previously, I was at <span id="hf-scope">HF</span>, <span id="hf-scope">SCOPE</span>,  <span id="hf-scope">NAVER</span> and <span id="hf-scope">THE REPUBLIC OF KOREA AIR FORCE</span></p></div>
+    <div id="intro-text"><p>Hey! I’m Sam and I’m a full stack developer. Previously, I was at <span>HF</span>, <span>SCOPE</span>,  <span>NAVER</span> and <span>THE REPUBLIC OF KOREA AIR FORCE</span></p></div>
    
-    <div id="activities-container">
-        <h2>Key Activities</h2>
-        <div class="activity-container">
-            <div class="duration">2022.08 - 2023.04</div>
-            <div class="activity-content">
-                <div style="margin-bottom:0.8rem;">Canada Google Developer Club</div>
-                <div style="color: #8B8B8B;">In-campus Algorithm Club, Canada</div>
-            </div>
+    <div class="outer-container">
+        <div class="inner-container1">
+            <h3 style="font-size:2.4rem">Key Acitivities</h3>
+            <p class="duration">
+                2022.08 - 2023.04
+            </p>
+            <p class="duration" style="margin-top:5rem">
+                2022.03 - 2022.08 (Part-time on the weekends)
+            </p>
         </div>
-        <div class="activity-container">
-            <div class="duration">2022.03 - 2022.08 (Part-time on the weekends)</div>
-            <div class="activity-content">
-                <div style="margin-bottom:0.8rem;">Ever Coding</div>
-                <div style="color: #8B8B8B;">As an assistant lecturer, I delivered the 'Python-based Autonomous Driving Car Algorithm Lecture' tailored specifically for middle and high school students.</div>
-            </div>
+        <div class="spacer">
+
         </div>
+        <div class="inner-container2">
+            <div style="margin-top:10rem; margin-bottom:0.8rem">Canada Google Developer Club</div>
+            <div style="color: #8B8B8B;">In-campus Algorithm Club, Canada</div>
+            <span style="margin-bottom:0.8rem; margin-top:3rem;">Ever Coding</span>
+            <p style="color: #8B8B8B;">As an assistant lecturer, I delivered the 'Python-based Autonomous Driving Car Algorithm Lecture' tailored specifically for middle and high school students.</p>
+        </div>
+
     </div>
     
-    <div>  
+    <div id="skills">  
         <h2 style="font-size:3rem;"> Skills</h2>
         <div class="skills-container">
                 <ul class="skill-list">
@@ -129,172 +133,212 @@
     
     <img src="resources/images/skinroutine.png" style="margin-top:20rem;">
   
-    <div class="skinroutine-container">
-        <div>
+    <div class="outer-container">
+        <div class="inner-container1">
             <h2>Skinroutine</h2>
             <div class="duration">2023.04 - 2024.03</div>
         </div>
-        <div>
-            <p style="font-size:1.7rem">
-                Personalized Skinroutine for individuals based on their BSTI (Skin Type Survey) results. I co-founded Skinroutine with my business partner who is a dermatologist to help people establish daily skin routine tailored to their needs and concerns.
-            </p>
-        </div>
-        <h3>Role</h3>
-        <h4>Planning</h4>
-        <div style="margin-top:2rem;">
-            <ul class="a">
-                <li>Wrote the business plan and technical discription for Skinroutine.</li>
-                <li>Hired talents for development.</li>
-                <li>Created the initial MVP (Minimum Viable Product) sitemap for SkinRoutine.</li>
-            </ul>
-        </div>
-
-        <h4 style="margin-top:7.5rem">Development</h4>
-        <div style="margin-top:3rem;">
-            <h5>Tech Spec</h5>
-            <ul class="b">
-                <li>Front-End : Flutter</li>
-                <li>Back-End  : Python, Django-rest-framework, MySQL</li>
-                <li>Hosting   : AWS lightsail</li>
-              </ul>
-        </div>
-        <div style="margin-top:3rem;">
-            <h5>Backend</h5>
-            <ul class="b">
-                <li>Created an API for implementing JWT token-based login and registration, including email verification</li>
-                <li>Developed of APIs for user withdrawal and password change.</li>
-                <li>Constructed APIs for the uploading and deletion of individual photos..</li>
-                <li>Established CI/CD using Jenkins, Docker, and Git Actions.</li>
-                <li>Crafted APIs for user account withdrawal and password modification.</li>
-                <li>Implemented API views utilizing TensorFlow to mimic before and after images of dermatological procedures, leveraging a model to extract post-procedure images</li>
-              </ul>
-        </div>
-        <div style="margin-top:3rem;">
-            <h5>Frontend</h5>
-            <ul class="b">
-                <li>Developed every UI elements based on figma design provided by designer.</li>
-                <li>Implimented push notification capabilities for user routines.</li>
-                <li>Developed automatic camera shoot calculating the angles and distance of users from camera with AR Core depth API.</li>
-                <li>Integrated user events with google analytics.</li>
-              </ul>
-        </div>
-
-        <div style="margin-top:7.5rem; display:flex;" >
-            <div style="width:100%;">
-                Reference material example:Our data analyst team developed a model for before and after simulation (e.g., Botox before and after). I assisted in the data selection and labeling tasks.
-            </div>
-            <div style="width:100%; caret-color: transparent;">
-                <img src="resources/images/face.png">
-            </div>
-        </div>
-
-        <div style="margin-top:7.5rem;">
-            <h4>Management</h4>
-            <ul class="b">
-                <li>As team leader, I led weekly meetings, sprints, and monitored team members' task progress regularly.</li>
-                <li>Drafted the Privacy Policy and Terms of Service for Skin Routine service through mentoring from a lawyer and reference materials.</li>
-                <li>Utilized Google Analytics to track various metrics linked to retention and frontend events, and based on this data, proceeding with sprints.</li>
-              </ul>
-        </div>
-
-        <div style="margin-top:7.5rem;">
-            <h4>Business</h4>
-            <ul class="b">
-                <li>Continuously improved the product through strategically planning and executing steady hypothesis tests. </li>
-                <li>Regularly monitored references and competing services, conducted SWOT analyses for each business, and formulated business strategies derived on them.</li>
-              </ul>
-        </div>
-
-        <div style="margin-top:7.5rem;">
-            <div style="display:flex; align-items: center;">
-                <span class="dot"></span>
-                <h3>Results and Achievements</h3>
-            </div>
-
-            <ul class="b">
-                <li>Ranked third in lifestyle category in the app store</li>
-                <li>Funded by Korea Institute of Start-up</li>
-                <li>Media coverage in various press outlets</li>
-                <li>Steady revenue generationby app sales</li>
-              </ul>
+        
+        <div class="spacer"></div>
+            
+        <div class="inner-container2" >
+            <p style="font-weight:300; color:#4B4B4B">Personalized Skinroutine for individuals based on their BSTI (Skin Type Survey) results. I co-founded Skinroutine with my business partner who is a dermatologist to help people establish daily skin routine tailored to their needs and concerns.</p>
         </div>
     </div>
+
+    <div class="outer-container" style="margin-top:10rem;">
+        <div class="inner-container1">
+            <span class="role">Role</span>
+        </div>
+        
+        <div class="spacer"></div>
+            
+        <div class="inner-container2">
+            <span class="heading3">Planning</span>
+            <div style="margin-top:2rem;">
+                <ul class="a" style="font-weight:300; color:#4B4B4B">
+                    <li>Wrote the business plan and technical discription for Skinroutine.</li>
+                    <li>Hired talents for development.</li>
+                    <li>Created the initial MVP (Minimum Viable Product) sitemap for SkinRoutine.</li>
+                </ul>
+            </div>   
+            <span class="heading3" style="margin-top:7.5rem;">Development</span>
+               <div style="margin-top:3rem;">
+                    <span class="heading3" style="font-weight:400">Tech Spec</span>
+                    <ul class="b" style="font-weight:300; color:#4B4B4B">
+                        <li>Front-End : Flutter</li>
+                        <li>Back-End  : Python, Django-rest-framework, MySQL</li>
+                        <li>Hosting   : AWS lightsail</li>
+                    </ul>
+                </div>
+            <div style="margin-top:3rem;">
+                <span class="heading3" style="font-weight:400">Backend</span>
+                <ul class="b" style="font-weight:300; color:#4B4B4B">
+                    <li>Created an API for implementing JWT token-based login and registration, including email verification</li>
+                    <li>Developed of APIs for user withdrawal and password change.</li>
+                    <li>Constructed APIs for the uploading and deletion of individual photos..</li>
+                    <li>Established CI/CD using Jenkins, Docker, and Git Actions.</li>
+                    <li>Crafted APIs for user account withdrawal and password modification.</li>
+                    <li>Implemented API views utilizing TensorFlow to mimic before and after images of dermatological procedures, leveraging a model to extract post-procedure images</li>
+                  </ul>
+            </div>
+            <div style="margin-top:3rem;">
+                <span class="heading3" style="font-weight:400">Frontend</span>
+                <ul class="b" style="font-weight:300; color:#4B4B4B">
+                    <li>Developed every UI elements based on figma design provided by designer.</li>
+                    <li>Implimented push notification capabilities for user routines.</li>
+                    <li>Developed automatic camera shoot calculating the angles and distance of users from camera with AR Core depth API.</li>
+                    <li>Integrated user events with google analytics.</li>
+                  </ul>
+            </div>
+    
+            <div style="margin-top:7.5rem; display:flex;" >
+                <div style="width:100%; font-weight:300; color:#4B4B4B">
+                    Reference material example:Our data analyst team developed a model for before and after simulation (e.g., Botox before and after). I assisted in the data selection and labeling tasks.
+                </div>
+                <div style="width:100%; caret-color: transparent;">
+                    <img src="resources/images/face.png">
+                </div>
+            </div>
+    
+            <div style="margin-top:7.5rem;">
+                <span class="heading3">Management</span>
+                <ul class="b" style="font-weight:300; color:#4B4B4B">
+                    <li>As team leader, I led weekly meetings, sprints, and monitored team members' task progress regularly.</li>
+                    <li>Drafted the Privacy Policy and Terms of Service for Skin Routine service through mentoring from a lawyer and reference materials.</li>
+                    <li>Utilized Google Analytics to track various metrics linked to retention and frontend events, and based on this data, proceeding with sprints.</li>
+                  </ul>
+            </div>
+    
+            <div style="margin-top:7.5rem;">
+                <span class="heading3">Business</span>
+                <ul class="b">
+                    <li>Continuously improved the product through strategically planning and executing steady hypothesis tests. </li>
+                    <li>Regularly monitored references and competing services, conducted SWOT analyses for each business, and formulated business strategies derived on them.</li>
+                  </ul>
+            </div>
+    
+          </div>
+        </div>
+        
+        <div class="outer-container" style="margin-top:10rem; margin-bottom:20rem;">
+            <div class="inner-container1">
+                <div style="display:flex; align-items: center;">
+                    <span style="font-size:2.6rem;font-weight:600">Results and Achievements</span>
+                </div>
+            </div>
+            <div class="spacer">
+    
+            </div>
+            <div class="inner-container2">
+                <ul class="b">
+                    <li>Ranked third in lifestyle category in the app store</li>
+                    <li>Funded by Korea Institute of Start-up</li>
+                    <li>Media coverage in various press outlets</li>
+                    <li>Steady revenue generationby app sales</li>
+                  </ul>
+            </div>
+        </div>
+    
+    
+               
+    
 
     <div style="border-bottom: 0.1rem solid #A0A0A0; margin-bottom:20rem;"></div>
 
     <img src="resources/images/rabbit.png">
-    <div class="skinroutine-container" style="border-bottom:none;">
-        <div>
-                <h2>Crazy Rich Rabbit</h2>
-                <div class="duration">2022.04 - 2023.02</div>
-        </div>
-        <div>
-            <p style="font-size:1.7rem">
-                This is a simple one-touch 2D shooting game created using the Unity engine. Players destroy enemies using various items, and when they collect tokens in the game, the tokens are deposited into their MetaMask wallet connected to the game, which issues its own tokens.
-            </p>
-        </div>
-        <h3>Role</h3>
-        <h4>Planning</h4>
-        <div style="margin-top:2rem;">
-            <ul class="a">
-                <li>Given the instruction to create a simple shooting game for crypto community users, I learned Unity and planned the game, drawing inspiration from straightforward control games like Flappy Bird and Cookie Run, while excluding detailed designs.</li>
-               
-              </ul>
-        </div>
-
-        <h4 style="margin-top:7.5rem">Development</h4>
-        <div style="margin-top:3rem;">
-            <h5>Tech Spec</h5>
-            <ul class="b">
-                <li>Front-End : Unity 2D, React</li>
-                <li>Back-End : MySQL. Django</li>
-                <li>Hosting : AWS EC2</li>
-              </ul>
+    
+    <div class="outer-container" style="margin-top:20rem;">
+        <div class="inner-container1">
+            <h2>Crazy Rich Rabbit</h2>
+            <div class="duration">2023.01 - 2024.01</div>
         </div>
         
-        <div style="margin-top:3rem; font-weight:400">
-            <ul class="a">
-                <li>Responsible for Unity side development, including adding attributes and developing various items.</li>
-            </ul>
+        <div class="spacer"></div>
             
+        <div class="inner-container2" >
+            <p style="font-weight:300; color:#4B4B4B">This is a simple one-touch 2D shooting game created using the Unity engine. Players destroy enemies using various items, and when they collect tokens in the game, the tokens are deposited into their MetaMask wallet connected to the game, which issues its own tokens.
+            </p>
         </div>
-        <div style="margin-top:3rem;">
-            <h5 style="margin-left:4rem;">Example of some items:</h5>
-            <ul class="b">
-                <li>Bomb item: Destroys all objects visible on the screen.</li>
-                <li>Attack speed increase item: Increases the firing speed of bullets.</li>
-                <li>Stamina recovery item: Increases stamina by 1 (prohibited if exceeds 3).</li>
-                <li>Invincibility item: Becomes invincible and enlarges for 10 seconds, destroying any contacted objects.</li>
-                <li>Shrinking item: Decreases the player's size gradually to increase evasion rate (increases by 2 levels upon death).</li>
-                <li>Weapon enhancement item: Increases weapon damage by 1 level (changes bullet size and type).</li>
-              </ul>
-        </div>
-        <div style="margin-top:3rem;">
-            <ul class="a">
-                <li>Addressed performance issues on low-spec devices.</li>
-                
-              </ul>
-            
-            <ul class="b">
-                <li>Diagnosed and fixed frame drop issues on low-performance devices when many objects appeared and bullet firing speed increased. Identified and corrected inefficient code using performance checking tools (e.g., switching from if/else statements to switch case statements).</li>
-                
-              </ul>
-              <ul class="a">
-                <li>Developed proprietary NFTs and user-specific items for holders, integrating them by extracting JSON-formatted NFT attributes stored in sessionStorage.</li>
-                <li>Implemented encryption/decryption algorithms for sensitive information-related API calls using key values for communication.</li>
-                <li>Continuous updates (adding items, changing images).</li>
-                <li>Designed API workflow and requested backend developers for implementation.</li>
-              </ul>
-        </div>
+    </div>
 
-        <div style="margin-top:7.5rem;">
-            <div style="display:flex; align-items: center;">
-                <span class="dot"></span>
-                <h3>Results and Achievements</h3>
+    <div class="outer-container" style="margin-top:10rem;">
+        <div class="inner-container1">
+            <span class="role">Role</span>
+        </div>
+        
+        <div class="spacer"></div>
+            
+        <div class="inner-container2" >
+            
+            <span class="heading3">Planning</span>
+            <div style="margin-top:2rem;">
+                <ul class="a">
+                    <li>Given the instruction to create a simple shooting game for crypto community users, I learned Unity and planned the game, drawing inspiration from straightforward control games like Flappy Bird and Cookie Run, while excluding detailed designs.</li>
+                   
+                  </ul>
+            </div>
+    
+            <h4 style="margin-top:7.5rem">Development</h4>
+            <div style="margin-top:3rem;">
+                <span class="heading3" style="font-weight:400">Tech Spec</span>
+                <ul class="b">
+                    <li>Front-End : Unity 2D, React</li>
+                    <li>Back-End : MySQL. Django</li>
+                    <li>Hosting : AWS EC2</li>
+                  </ul>
             </div>
             
+            <div style="margin-top:3rem; font-weight:400">
+                <ul class="a">
+                    <li>Responsible for Unity side development, including adding attributes and developing various items.</li>
+                </ul>
+                
+            </div>
+            <div style="margin-top:3rem;">
+                <h5 style="margin-left:4rem;">Example of some items:</h5>
+                <ul class="b">
+                    <li>Bomb item: Destroys all objects visible on the screen.</li>
+                    <li>Attack speed increase item: Increases the firing speed of bullets.</li>
+                    <li>Stamina recovery item: Increases stamina by 1 (prohibited if exceeds 3).</li>
+                    <li>Invincibility item: Becomes invincible and enlarges for 10 seconds, destroying any contacted objects.</li>
+                    <li>Shrinking item: Decreases the player's size gradually to increase evasion rate (increases by 2 levels upon death).</li>
+                    <li>Weapon enhancement item: Increases weapon damage by 1 level (changes bullet size and type).</li>
+                  </ul>
+            </div>
+            <div style="margin-top:3rem;">
+                <ul class="a">
+                    <li>Addressed performance issues on low-spec devices.</li>
+                    
+                  </ul>
+                
+                <ul class="b">
+                    <li>Diagnosed and fixed frame drop issues on low-performance devices when many objects appeared and bullet firing speed increased. Identified and corrected inefficient code using performance checking tools (e.g., switching from if/else statements to switch case statements).</li>
+                    
+                  </ul>
+                  <ul class="a">
+                    <li>Developed proprietary NFTs and user-specific items for holders, integrating them by extracting JSON-formatted NFT attributes stored in sessionStorage.</li>
+                    <li>Implemented encryption/decryption algorithms for sensitive information-related API calls using key values for communication.</li>
+                    <li>Continuous updates (adding items, changing images).</li>
+                    <li>Designed API workflow and requested backend developers for implementation.</li>
+                  </ul>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="outer-container" style="margin-top:10rem; margin-bottom:20rem;">
+        <div class="inner-container1">
+            <div style="display:flex; align-items: center;">
+                <span style="font-size:2.6rem;font-weight:600">Results and Achievements</span>
+            </div>
+        </div>
+        <div class="spacer">
+
+        </div>
+        <div class="inner-container2">
             <ul class="a">
-            <li>We maintained <span style="font-weight:600;"> a daily active user (DAU) count of over 300 for six consecutive months.</span> </li>
+                <li>Maintained  a daily active user (DAU) count of over <span style="font-weight:600;">1000</span> for <span style="font-weight:600;">six</span> consecutive months. </li>
             </ul>
         </div>
     </div>
