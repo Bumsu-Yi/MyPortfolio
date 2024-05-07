@@ -87,6 +87,7 @@ footer {
 
 .menu-container {
     width:80%;
+    max-width:100rem;
     margin-left:auto;
     margin-right:auto;
 }
@@ -326,15 +327,14 @@ footer {
     margin-bottom:1rem;
   }
 
-  
   /* Input styles */
   .form-group input,
   .form-group textarea 
-{
+  {
     width: 100%; /* Make inputs take up full width */
-    padding: 1rem; /* Add some padding for better appearance */
+    padding : 1rem; /* Add some padding for better appearance */
     border: 0.1rem solid #ccc; /* Add a border */
-    border-radius: 0.5rem; /* Add border radius */
+    border-radius: 2rem; /* Add border radius */
     box-sizing:border-box;
   }
   
@@ -344,6 +344,7 @@ footer {
     color: #999; /* Placeholder text color */
     box-sizing:border-box;
   }
+
   /* Button styles */
   button[type="submit"] {
     width: 100%; /* Make button take up full width */
@@ -399,8 +400,6 @@ ul.b li{
         flex-direction: column; /* Example: Change flex direction to column */
     }
 
-   
-    
     .activity-content{
         width:100%;
     }
