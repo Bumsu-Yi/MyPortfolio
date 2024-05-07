@@ -2,8 +2,8 @@
 
 body {
     margin : auto;
-    width : 95%;
-    max-width:110rem;
+    width : 80%;
+    max-width:100rem;
     position: relative; /* Set body position to relative */
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
